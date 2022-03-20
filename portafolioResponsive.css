@@ -1,0 +1,223 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+.container{
+    width: 90%;
+    max-width: 62.5em;
+    margin: 1.3em auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7,auto);
+    grid-template-areas: "header header header"
+                         "main   main   main"
+                         "card1  card1  sidebar"
+                         "card2  card2  sidebar"
+                         "card3  card3  sidebar"
+                         "footer footer footer";
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav{
+    width: 90%;
+    padding: 10px 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav .a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bold;
+    transition: ease-in .2s;
+}
+
+.nav .a:hover{
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+.divh3{
+    display: flex;
+    justify-content: center;
+}
+.h3{
+    width: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+.h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 300px;
+}
+
+/*¨      main      */
+.main,.contenedor-card{
+    grid-area: main;
+    display: flex;
+    background: #000;
+    color: #887c7c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-align:left;
+    padding-left: 12px;
+    padding-top: 12px;   
+    
+}
+
+.main .texto-card{
+    color:white;
+    font-size: 21px;
+    padding-top: 21px;
+}
+.div-text{
+    position: relative;
+}
+.buttom-1{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px;
+    border: none;
+    background-color: #4e4d4d;
+    color: #b8a6a6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+.buttom-1:hover{
+    background: rgb(75, 75, 75);
+    color: #8f8888;
+}
+/*      cards       */
+.titulo-card{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+}
+.texto-card{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4e4d4dc4;
+}
+.card1{
+    grid-area: card1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+
+}
+.divimage{
+    margin-right: 15px;
+}
+
+.card2{
+    grid-area: card2;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+.card3{
+    grid-area: card3;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.sidebar{
+    padding-top: 50px;
+    grid-area:sidebar;
+    background: #000;
+    color: #4e4d4d;
+    text-align: center;
+  
+}
+.sidebar .p{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+}
+
+.containerP{
+    display: flex;
+    justify-content: center;
+}
+.sidebarContainer{
+    display: flex;
+    justify-content: center;    
+}
+.sidebar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nav2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav2 .a2{
+    padding-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'roboto',sans-serif;
+    color: white;
+
+}
+
+.nav2 .a2:hover{
+    text-decoration:underline;
+}
+.footer{
+    padding-right: 50px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: #4e4d4d;
+}
+
+
+
